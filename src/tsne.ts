@@ -23,7 +23,7 @@ import {tensorToDataTexture} from './tensor_to_data_texture';
 import {TSNEOptimizer} from './tsne_optimizer';
 
 export interface TSNEConfiguration {
-  perplexity?: number;             // Default: 30
+  perplexity?: number;             // Default: 18
   exaggeration?: number;           // Default: 4
   exaggerationIter?: number;       // Default: 300
   exaggerationDecayIter?: number;  // Default: 200
@@ -79,7 +79,7 @@ export class TSNE {
    */
   private async initialize(): Promise<void> {
     // Default parameters
-    let perplexity = 30;
+    let perplexity = 18;
     let exaggeration = 4;
     let exaggerationIter = 300;
     let exaggerationDecayIter = 200;
